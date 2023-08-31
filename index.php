@@ -8,7 +8,7 @@
 <?php
 $prefix = "";
 if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
-	echo "<script>alert('SERVER');</script>"
+	echo("<script>alert('SERVER');</script>");
 	$prefix = "nilsodin.se//";
 } 
 
