@@ -8,7 +8,9 @@
 <?php
 // Fix for changing relative paths between server and local env
 $prefix = "";
-if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') $prefix = "nilsodin.se/";
+if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') { 
+	$prefix = "nilsodin.se/"; 
+}
 ?>
 
 
