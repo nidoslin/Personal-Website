@@ -4,6 +4,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<?php
+$prefix = "";
+if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
+	echo "<script>alert('SERVER');</script>"
+	$prefix = "nilsodin.se//";
+} 
+
+?>
+
 <html>
 	<head>
 		<title>Nils Odin | Portfolio</title>
