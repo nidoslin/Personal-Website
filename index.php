@@ -8,8 +8,7 @@
 <?php
 $prefix = "";
 if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
-	echo("<script>alert('SERVER');</script>");
-	$prefix = "nilsodin.se//";
+	$prefix = "nilsodin.se/";
 } 
 
 ?>
@@ -48,7 +47,7 @@ if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="CV_Nils_Odin.pdf" download class="icon solid fa-download"> Resume</a></li>
+								<li><a href="<?=$prefix?>CV_Nils_Odin.pdf" download class="icon solid fa-download"> Resume</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -90,15 +89,10 @@ if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
 			<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/browser.min.js"></script>
-			<script src="/assets/js/breakpoints.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<script src="/assets/js/main.js"></script>
-
-			<script>
-
-				alert(location.protocol + '//' + location.host);
-			</script>
+			<script src="<?=$prefix?>/assets/js/jquery.min.js"></script>
+			<script src="<?=$prefix?>/assets/js/browser.min.js"></script>
+			<script src="<?=$prefix?>/assets/js/breakpoints.min.js"></script>
+			<script src="<?=$prefix?>/assets/js/util.js"></script>
+			<script src="<?=$prefix?>/assets/js/main.js"></script>
 	</body>
 </html>
