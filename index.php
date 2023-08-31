@@ -6,11 +6,9 @@
 -->
 
 <?php
-$prefix = "";
-if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
-	$prefix = "nilsodin.se/";
-} 
-
+// Fix for changing relative paths between server and local env
+if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') $prefix = "nilsodin.se/";
+else $prefix = "";
 ?>
 
 
@@ -63,7 +61,7 @@ if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
 								<p>I am an aspiring data scientist and software developer who is currently studying my Master's in data science and Machine Learning at <a href="https://www.kth.se/">KTH</a> in Stockholm. 
 								I enjoy learning new skills and solving problems.</p>
 								<p>Besides my studies, I train parkour and free-running, spend time with my fiancée, and run a small business focused on web development.</p>
-								<p><img src="/images/profile pic B&W.png" alt="profile picture" id="profile_pic" /></p>
+								<p><img src="<?=$prefix?>/images/profile pic B&W.png" alt="profile picture" id="profile_pic" /></p>
 							</article>
 
 
