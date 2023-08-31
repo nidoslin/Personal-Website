@@ -8,8 +8,8 @@
 <?php
 // Fix for changing relative paths between server and local env
 $prefix = "";
-echo($_SERVER['SERVER_NAME']);
-if($_SERVER['SERVER_NAME'] === 'nilsodin.se') { 
+echo($_SERVER['REMOTE_ADDR']);
+if($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') { 
 	$prefix = "nilsodin.se/"; 
 }
 ?>
