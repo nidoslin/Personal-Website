@@ -8,8 +8,8 @@
 <?php
 // Fix for changing relative paths between server and local env
 $prefix = "";
+echo("<script>alert('"+$_SERVER['SERVER_NAME']+"');</script>");
 if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') { 
-	echo("<script>alert('"+$_SERVER['SERVER_NAME']+"');</script>");
 	$prefix = "nilsodin.se/"; 
 }
 ?>
@@ -37,7 +37,7 @@ if($_SERVER['SERVER_NAME'] === 'www.nilsodin.se') {
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Nils Odin</h1>
+								<h1>Nils Odin DEBUG</h1>
 								<p>Data science student at <a href="www.kth.se">KTH</a></p>
 								<p class="degrees">
 									<span>Bachelors's degree in computer science</span>
