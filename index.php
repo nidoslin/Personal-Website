@@ -7,9 +7,9 @@
 
 <?php
 // Fix for changing relative paths between server and local env
+$LOCALHOST = '127.0.0.1';
 $prefix = "";
-echo($_SERVER['REMOTE_ADDR']);
-if($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') { 
+if($_SERVER['REMOTE_ADDR'] !== $LOCALHOST) { 
 	$prefix = "nilsodin.se/"; 
 }
 ?>
