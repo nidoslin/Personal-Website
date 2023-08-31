@@ -36,7 +36,7 @@ if($_SERVER['SERVER_NAME'] === 'nilsodin.se') {
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Nils Odin DEBUG</h1>
+								<h1>Nils Odin</h1>
 								<p>Data science student at <a href="www.kth.se">KTH</a></p>
 								<p class="degrees">
 									<span>Bachelors's degree in computer science</span>
