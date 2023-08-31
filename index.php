@@ -45,7 +45,8 @@ else $prefix = "";
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="<?=$prefix?>CV_Nils_Odin.pdf" download class="icon solid fa-download"> Resume</a></li>
+								<!-- <li><a href="<?//=$prefix?>CV_Nils_Odin.pdf" download class="icon solid fa-download"> Resume</a></li> -->
+								<li><a href="#resume"  class="icon solid fa-download"> Resume</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -62,6 +63,14 @@ else $prefix = "";
 								I enjoy learning new skills and solving problems.</p>
 								<p>Besides my studies, I train parkour and free-running, spend time with my fiancée, and run a small business focused on web development.</p>
 								<p><img src="<?=$prefix?>/images/profile pic B&W.png" alt="profile picture" id="profile_pic" /></p>
+							</article>
+
+
+							<!-- Contact -->
+							<article id="resume">
+								<h2 class="major">Resume</h2>
+								<p>Resume available upon request.</p>
+								<p>Please email <a href="mailto:info@nilsodin.se">info@nilsodin.se</a></p>
 							</article>
 
 
